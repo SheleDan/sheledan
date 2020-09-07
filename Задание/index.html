@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="image/logo.png">
+    <title>ИФМНиИТ</title>
+</head>
+<body>
+    
+    <div class="flexbox">
+
+        <div class="header">
+            <h1>ИФМНиИТ</h1>
+            <h4>Институт физико-математических наук и информационных технологий</h4>
+            <div class="logo"> <img src="image/logo.png"> </div>
+        </div>
+
+      <div class="grid">
+         <div class="new"> <div class="fon"> 01.03.02 Прикладная математика и информатика </div> </div>
+         <div class="new"> <div class="fon"> 02.03.03 Математическое обеспечение и администрирование информационных систем </div> </div>
+         <div class="new"> <div class="fon"> 03.03.03 Радиофизика </div> </div>
+         <div class="new"> <div class="fon"> 09.03.02 Информационные системы и технологии </div> </div>
+         <div class="new"> <div class="fon"> 10.03.01 Информационная безопасность </div> </div>
+         <div class="new"> <div class="fon"> 11.03.02 Инфокоммуникационные технологии и системы связи </div> </div>
+         <div class="new"> <div class="fon"> 16.03.01 Техническая физика </div> </div>
+         <div class="new"> <div class="fon"> 38.03.05 Бизнес-информатика </div> </div>
+         <div class="new"> <div class="fon"> 10.05.01 Компьютерная безопасность </div> </div>
+      </div>
+
+     <div class="footer"> 
+         <div class="info">
+            <div class="logo"> 
+                <div align="center"> <img src="image/logo.png" align="center" >  Балтийский Федеральный Университет им. И.Канта </div>
+                <div align="center"> <img src="image/map.png" alt="" align="center">  Россия г. Калининград, ул. А.Невского, д.14 </div>
+                <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9216.551914653804!2d20.51923183521818!3d54.72478777660425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e315e4077dffff%3A0x25caf2eed698283b!2z0YPQuy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0J3QtdCy0YHQutC-0LPQviwgMTQsINCa0LDQu9C40L3QuNC90LPRgNCw0LQsINCa0LDQu9C40L3QuNC90LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCAyMzYwNDE!5e0!3m2!1sru!2sru!4v1599117786256!5m2!1sru!2sru" width="400" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>    
+            </div>  
+         </div>
+
+         <div class="connect"> 
+             <div>
+                 <h4> Остались вопросы? </h4>
+                 <p>Заполните анкету и мы перезвоним Вам!</p> 
+             </div>
+             <form id="form_mail" method="POST">
+             <div class="feedback">
+                 <input type="text" id="user_name" name="user_name" placeholder="ФИО" class="name">
+                 <input type="text" id="user_mail" name="user_mail" placeholder="Email" class="mail">
+                 <input type="text" id="user_phone" name="user_phone" placeholder="Номер телефона" class="telefon_number">
+                 <button id="sendMail"> Отправить </button>
+             </div>
+             </form>
+             <div id="errorMess"></div>
+         </div>
+     </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="form_mail.js" ></script>
+</body>
+</html>

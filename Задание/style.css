@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url( https://www.newkaliningrad.ru/upload/medialibrary/ac5/ac5912f4872a977fecee709513429206.jpg );
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(200px, auto);
+    margin: 1em;
+}
+.flexbox{
+    display: flexbox;
+}
+.header{
+    color: black;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    user-select: none;  
+}
+
+.header h1{
+    font-size: 40px;
+    padding: 0 1em;
+    border-right: 2px solid black ;
+}
+.header h4{
+    display: block;
+    font-size: 18px;
+    padding-left: 1em;
+}
+.header .logo{
+    padding-top: 10px ;
+    margin: 1em;
+}
+.header .logo img{
+    width: 50px;
+}
+.fon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    width: 100%;
+    
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(200px, auto);
+    background: rgba(255,255,255, 0.75);
+    height: auto;
+}
+.info, .connect{
+    padding: 1em;
+    text-align: center;
+}
+.info{
+    border-right: 1px solid black;
+}
+.info .logo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+}
+.info .logo img{
+    width: 30px;
+}
+.connect{
+    background: rgba(135, 206, 250, 1);
+    border-radius: 1em;
+    box-shadow: 2px 2px 8px black;
+}
+.connect h4, p{
+    user-select: none; 
+}
+.feedback{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5em;
+}
+.feedback input, button{
+    margin: 0 auto;
+    min-height: 30px;
+    border-radius: 1em;
+    border: none;
+    min-width: 300px;
+    outline: none;
+}
+
+.feedback button:active{
+    background-color: #676767;
+}
+.feedback input::placeholder{
+    height: auto;
+    padding: 1em;
+    text-align: left;
+}
+.feedback input:focus{
+    text-align: center;
+}
+.feedback input:valid{
+    text-align: center;
+}
+
+@media (max-width: 700px ){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    body{
+        background-image: url( https://avatars.mds.yandex.net/get-altay/176734/2a00000164407980bb2b543b17bc3d72a994/XXL );
+    }
+    .header .logo img{
+        display: none;
+    }
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .info{
+        border-right: 0px;
+    }
+}
+@media(min-width: 1250px ){
+    body{
+        background-image: url( https://kaskad.tv/images/5629499575979421_f327.jpg );
+    }
+}
+@media(max-width: 500px ){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header h4{
+        display: none;
+    }
+    .header h1{
+        border-right: 0;
+    }
+}
+.new{
+    font-weight: bolder;
+    display: flex;
+    background-color: lightskyblue;
+    padding: 1em;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 2px 2px 8px black;
+    user-select: none;  
+}
+.new:hover{
+    transform: scale(0.95 , 0.95);
+    transition: 0.3s;
+}
+#errorMess{
+    display: block;
+    margin: 20px auto auto auto;
+    width: 200px;
+    font-size: 20px;
+    font-style: oblique;
+    user-select: none; 
+}
